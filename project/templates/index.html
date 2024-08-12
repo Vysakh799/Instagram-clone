@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+</head>
+<body>
+    <div class="main1">
+        <nav>
+            <div class="part1">
+                <img src="{% static 'images\Instagram-Logo-2016-present.png' %}" alt="logo">
+            </div>
+            <div class="part2">
+                <div class="dp">
+                    <img src="{% static '/images/WhatsApp Image 2023-09-08 at 3.45.22 PM.jpeg' %}" alt="logo">
+                </div>
+                <div class="names">
+                    <div class="username">
+                        <a href="user_index/{{user.pk}}"><p>{{user.username}}</p></a>
+                        <a href=""><p>{{user.name}}</p></a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+</head>
+<body>
+    <div class="main1">
+        <nav>
+            <div class="part1">
+                <img src="{% static 'images\Instagram-Logo-2016-present.png' %}" alt="logo">
+            </div>
+            <div class="part2">
+                <div class="dp">
+                    <img src="{% static '/images/download.png' %}" alt="logo">
+                </div>
+                <div class="names">
+                    <div class="username">
+                        <a href="user_index/{{user.pk}}"><p>{{user.username}}</p></a>
+                        <a href=""><p>{{user.name}}</p></a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="profile">
+                <div class="headarea">
+                    <div class="part1">
+                        <div class="image">
+                            <img src="{% static '/images/download.png' %}" alt="logo">
+                        </div>
+                        <div class="about">
+                            <p>{{user.username}}</p>
+                            <p>{{user.name}}</p>
+                        </div>
+                        <div class="bts">
+                            <a href="../add_post">Add post</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="post">
+                    {% for i in images %}
+                        <img src="{{i.image.url}}" alt="">
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

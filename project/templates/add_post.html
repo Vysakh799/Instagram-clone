@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+</head>
+<body>
+    <div class="main">
+            <div class="loginbox">
+                <!-- <div class="logo">
+                    <img src="{% static 'images\Instagram-Logo-2016-present.png' %}" alt="logo">
+                </div> -->
+                <div class="inp_boxes">
+                    <form action="add_post" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="file">
+                            <input type="file" name="image" id="" style="border: none;" >
+
+                        </div>
+                        <div class="description">
+                            <input type="text" name="description" id="" placeholder="Desccription" >
+
+                        </div>
+                        
+                        <div class="bt" style="display: flex; justify-content: center;">
+                        <input type="submit" value="Add POST" style="background-color: rgb(225, 81, 105);" id="bt1">
+                        
+
+                        </div>
+                        <!-- <div class="p">
+                            <p>Already have a accout <a href="/">Login</a></p>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>

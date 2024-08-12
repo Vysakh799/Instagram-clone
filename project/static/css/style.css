@@ -1,0 +1,108 @@
+.logo img{
+    height: 80px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.loginbox{
+    /* background-color: rgb(47, 47, 73); */
+    border: 1px solid black;
+    width: 400px;
+    padding: 50px;
+    border-radius: 25px;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inp_boxes{
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+/* .loginbox .inp_boxes .username{
+
+    width: 100%;
+    /* background-color: green; */
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    padding-left: 10px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+#bt1:hover{
+    background-color: blue;
+}
+.p{
+    display: flex;
+    justify-content: center;
+}
+
+.part1 img{
+    height: 80px;
+
+}
+nav{
+    /* background-color: red; */
+    display: flex;
+}
+ 
+nav .part2{
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-end;
+}
+.dp img{
+    height: 50px;
+    border-radius: 50px;
+}
+.dp{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.names{
+    margin-right: 25px;
+}
+.names a{
+    text-decoration: none;
+    color: black;
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.profile{
+    /* background-color: blue; */
+    width: 80%;
+}
+.part1 img{
+    height: 100px;
+    border-radius: 50px;
+}
+.part1{
+    display: flex;
+}
+.headarea{
+    padding: 30px;
+}
+.headarea p{
+    font-size: 20px;
+
+}
+.headarea .about{
+    margin-left: 15px;
+}
+.bts{
+    display: flex;
+    background-color: red;
+    width: 100%;
+    justify-content: flex-end;
+}

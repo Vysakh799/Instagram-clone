@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+</head>
+<body>
+    <div class="main">
+            <div class="loginbox">
+                <div class="logo">
+                    <img src="{% static 'images\Instagram-Logo-2016-present.png' %}" alt="logo">
+                </div>
+                <div class="inp_boxes">
+                    <form action="register" method="POST">
+                        {% csrf_token %}
+                        <div class="name">
+                            <input type="text" name="name" id="" placeholder="Name" >
+
+                        </div>
+                        <div class="email">
+                            <input type="text" name="email" id="" placeholder="Email" >
+
+                        </div>
+                        <div class="Phno">
+                            <input type="text" name="phno" id="" placeholder="Phone Number" >
+
+                        </div>
+                        <div class="username">
+                            <input type="text" name="username" id="" placeholder="Username" >
+
+                        </div>
+                        <div class="password" >
+                        <input type="password" name="password" id="" placeholder="Password">
+
+                        </div>
+                        <div class="bt" style="display: flex; justify-content: center;">
+                        <input type="submit" value="Register" style="background-color: rgb(225, 81, 105);" id="bt1">
+                        
+
+                        </div>
+                        <div class="p">
+                            <p>Already have a accout <a href="/">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>
