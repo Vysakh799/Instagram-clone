@@ -102,7 +102,64 @@ nav .part2{
 }
 .bts{
     display: flex;
-    background-color: red;
+    /* background-color: rgb(0, 0, 0); */
     width: 100%;
     justify-content: flex-end;
+}
+.bts a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(239, 49, 144);
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    padding: 6px;
+    border-radius: 12px;
+    font-weight: 700;
+}
+.bts a:hover{
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+    color:white;
+}
+.post img{
+    height: 250px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .main_container{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+} */
+.c_dp{
+    /* background-color: rgb(68, 62, 62); */
+    width: 50%;
+    display: flex;
+}
+.c_dp img{
+    height: 45px;
+    border-radius: 50px;
+
+}
+.name{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c_post{
+    width: 50%;
+    margin-bottom: 25px;
+}
+.c_post img{
+    width: 100%;
+    margin-top: 10px;
+    
 }

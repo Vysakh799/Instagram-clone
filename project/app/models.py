@@ -15,3 +15,6 @@ class Post(models.Model):
     uname=models.ForeignKey(User,on_delete=models.CASCADE)
     image=models.FileField()
     desc=models.TextField()
+
+    def __str__(self) :
+        return self.uname.name

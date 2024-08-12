@@ -20,9 +20,11 @@
                 <div class="names">
                     <div class="username">
                         <a href="user_index/{{user.pk}}"><p>{{user.username}}</p></a>
-                        <a href=""><p>{{user.name}}</p></a>
+                        <a href="user_index/{{user.pk}}"><p>{{user.name}}</p></a>
                     </div>
-
+                </div>
+                <div class="logout">
+                    <a href="../logout">Logout</a>
                 </div>
             </div>
         </nav>
@@ -45,7 +47,7 @@
                 </div>
                 <div class="post">
                     {% for i in images %}
-                        <img src="{{i.image.url}}" alt="">
+                        <img src="{{i.image.url}}" alt="" style="height: 250px; width: 250px;">
                     {% endfor %}
                 </div>
             </div>

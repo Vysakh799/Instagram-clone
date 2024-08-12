@@ -6,4 +6,5 @@ urlpatterns = [
     path('index',views.index),
     path('user_index/<pk>',views.user_index),
     path('add_post',views.add_post),
+    path('logout',views.logout),
 ]

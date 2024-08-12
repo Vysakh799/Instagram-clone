@@ -15,7 +15,7 @@
             </div>
             <div class="part2">
                 <div class="dp">
-                    <img src="{% static '/images/WhatsApp Image 2023-09-08 at 3.45.22 PM.jpeg' %}" alt="logo">
+                    <img src="{% static '/images/download.png' %}" alt="logo">
                 </div>
                 <div class="names">
                     <div class="username">
@@ -26,6 +26,22 @@
                 </div>
             </div>
         </nav>
+        <div class="container">
+                {% for i in Users %}
+                        <div class="c_dp">
+                            <img src="{% static '/images/download.png' %}" alt="logo">
+                            <div class="name" style="margin-left: 10px;">
+                                {{i.uname.username}}
+                            </div>
+                        </div>
+                        <div class="c_post">
+                            <img src="{{i.image.url}}" alt="">
+                            <div class="c_desc">
+                                {{i.desc}}
+                            </div>
+                        </div>
+                {% endfor %}
+        </div>
         
     </div>
 </body>
