@@ -6,11 +6,14 @@ def login(request):
     if request.method=="POST":
         username=request.POST['username']
         password=request.POST['password']
-        data=User.objects.get(username=username)
-        if password==data.password:
-           request.session['user']=username
-           return redirect(index)
-        else:
+        try:
+            data=User.objects.get(username=username)
+            if password==data.password:
+                request.session['user']=username
+                return redirect(index)
+            else:
+                return redirect(login)
+        except:
             return redirect(login)
     return render(request,'login.html')
 def register(request):
